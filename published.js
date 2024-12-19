@@ -20,7 +20,7 @@ googletag.cmd.push(function () {
 
     var mapping_retangle = googletag.sizeMapping()
         .addSize([200, 200], [[300, 250]])
-        .addSize([980, 200], [[300, 250]])
+        .addSize([960, 200], [[300, 250]])
         .build();
 
 
