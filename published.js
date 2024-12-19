@@ -24,13 +24,13 @@ googletag.cmd.push(function () {
         .build();
 
 
-    googletag.defineSlot('/7542/parceiros/amomeupet', [[970, 250]], 'r7_header')
+    googletag.defineSlot('/7542/parceiros/defaut', [[970, 250]], 'r7_header')
         .defineSizeMapping(mapping_header)
         .setTargeting(REFRESH_KEY, REFRESH_VALUE)
         .setTargeting('refreshed_slot', 'false')
         .addService(googletag.pubads());
 
-    googletag.defineSlot('/7542/parceiros/amomeupet', [[300, 250]], 'r7_texto')
+    googletag.defineSlot('/7542/parceiros/defaut', [[300, 250]], 'r7_texto')
         .defineSizeMapping(mapping_retangle)
         .setTargeting(REFRESH_KEY, REFRESH_VALUE)
         .setTargeting('refreshed_slot', 'false')
