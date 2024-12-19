@@ -80,3 +80,4 @@ function appendAd(adUnitID) {
 
 appendAd('r7_header');
 appendAd('r7_texto');
+appendAd('r7_texto1');
