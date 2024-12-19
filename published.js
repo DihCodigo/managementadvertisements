@@ -18,14 +18,25 @@ googletag.cmd.push(function () {
         .addSize([980, 200], [[970, 250], [728, 90]])
         .build();
 
+    var mapping_middle = googletag.sizeMapping()
+        //.addSize([200, 200], [[300, 250]])
+        .addSize([980, 200], [[728, 90]])
+        .build();
+
     var mapping_retangle = googletag.sizeMapping()
         .addSize([200, 200], [[300, 250]])
-        .addSize([960, 200], [[300, 250]])
+        .addSize([980, 200], [[300, 250]])
         .build();
 
 
     googletag.defineSlot('/7542/parceiros/defaut', [[970, 250]], 'r7_header')
         .defineSizeMapping(mapping_header)
+        .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+        .setTargeting('refreshed_slot', 'false')
+        .addService(googletag.pubads());
+
+        googletag.defineSlot('/7542/parceiros/defaut', [[728, 90]], 'r7_middle')
+        .defineSizeMapping(mapping_middle)
         .setTargeting(REFRESH_KEY, REFRESH_VALUE)
         .setTargeting('refreshed_slot', 'false')
         .addService(googletag.pubads());
@@ -79,5 +90,5 @@ function appendAd(adUnitID) {
 }
 
 appendAd('r7_header');
+appendAd('r7_middle');
 appendAd('r7_texto');
-appendAd('r7_texto1');
