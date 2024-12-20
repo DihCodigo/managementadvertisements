@@ -1,17 +1,14 @@
-var middleContent = document.querySelector("body > main > section.featured-page-section.section-tempo");
+var middleContent = document.querySelector("body > main > div:nth-child(3)");
     if(middleContent) {
       var middleContentDiv = document.createElement('div');
       middleContentDiv.id = 'middle-content';
 
       var middlePage1DesktopDiv = document.createElement('div');
-      middlePage1DesktopDiv.id = 'middle-page-1-desktop';
+      middlePage1DesktopDiv.id = 'r7_middle';
 
-      var middlePage1MobileDiv = document.createElement('div');
-      middlePage1MobileDiv.id = 'middle-page-1-mobile';
       
       middleContentDiv.appendChild(middlePage1DesktopDiv);
-      middleContentDiv.appendChild(middlePage1MobileDiv);
-      middleContent.insertAdjacentElement("beforebegin", middleContentDiv);
+      middleContent.insertAdjacentElement("afterbegin", middleContentDiv);
   }else {
     console.log("caminho não encontrado!");
   }
