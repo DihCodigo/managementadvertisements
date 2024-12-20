@@ -1,19 +1,12 @@
-console.log("Gerenciador de divs (AMP)");
-
-// Função principal que adiciona a nova div
-function addDynamicContent() {
-  const targetDiv = document.getElementById("target-div");
-
-  if (targetDiv) {
-    const newDiv = document.createElement("div");
-    newDiv.id = "new-content";
-    newDiv.textContent = "Conteúdo inserido dinamicamente!";
-    targetDiv.appendChild(newDiv);
-    console.log("Div adicionada com sucesso.");
-  } else {
-    console.log("Elemento não encontrado.");
-  }
-}
-
-// Executa a função automaticamente
-addDynamicContent();
+console.log("Olá Mundo! Console para AMP.");
+var ampAd = document.createElement('amp-ad');
+  ampAd.setAttribute('width', '300');
+  ampAd.setAttribute('height', '250');
+  ampAd.setAttribute('type', 'doubleclick');
+  ampAd.setAttribute('data-slot', '/7542/parceiros/amomeupet');
+  ampAd.setAttribute('data-multi-size', '300x250');
+  ampAd.setAttribute('data-lazy-fetch', 'true');
+  ampAd.setAttribute('data-loading-strategy', '1');
+  ampAd.setAttribute('data-enable-refresh', '45');
+  
+  document.body.appendChild(ampAd);
