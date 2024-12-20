@@ -1,3 +1,4 @@
+console.log("Gerenciador de div's");
 var middleContent = document.querySelector("body > main > div:nth-child(3)");
     if(middleContent) {
       var middleContentDiv = document.createElement('div');
