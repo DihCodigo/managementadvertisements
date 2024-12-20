@@ -8,7 +8,7 @@ var middleContent = document.querySelector("body > main > div:nth-child(3)");
 
       
       middleContentDiv.appendChild(middlePage1DesktopDiv);
-      middleContent.insertAdjacentElement("afterbegin", middleContentDiv);
+      middleContent.insertAdjacentElement("afterend", middleContentDiv);
   }else {
     console.log("caminho não encontrado!");
   }
